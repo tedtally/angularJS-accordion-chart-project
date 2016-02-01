@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<div class="panel-heading">
+  <h4 class="panel-title col-sm-12">
+
+    <div class="col-xs-1 no-padding-left">
+      <a data-toggle="collapse" data-target="#{{c.buildname}}" ng-click="Details = !Details;Top = !Top" class="collapsed no-padding-left color left col-md-12">
+    <div class="{{c.class}} {{c.type}} icon" ></div>
+    </a>
+        
+    </div>
+    <div class="col-xs-2">
+        <label class="{{c.class}}" style="font-size:16px;">{{c.buildname}}</label>
+    </div>
+    <div class="col-xs-1">
+        <label class="{{c.class}}" style="font-size:14px;">{{c.owner || 'N\A'}}</label>
+    </div>
+    <div class="col-xs-2">
+        <label class="{{c.class}}" style="font-size:16px;">{{c.dateAdded | date:"MM/dd/yyyy h:mma" || 'N\A'}}</label>
+    </div>
+    <div class="col-xs-1">
+        <label class="{{c.class}}" style="font-size:16px;float:left;">{{c.status || 'N\A'}}</label>
+    </div>
+    <div class="col-xs-1">
+        <div></div> 
+        <uib-progressbar class="_element default" ng-hide="Details" value="c.collapsed_pgbar_metrics" type="{{c.collapsed_pgbar_metrics_class}}"></uib-progressbar>
+    </div> 
+    <div class="col-xs-1">
+        <div></div><uib-progressbar class="_element default"  value="c.collapsed_pgbar_build" type="{{c.collapsed_pgbar_build_class}}" ng-hide="Details"></uib-progressbar>
+    </div>
+    <div class="col-xs-1">
+         <div></div><uib-progressbar class="_element default"  value="c.collapsed_pgbar_unittest" type="{{c.collapsed_pgbar_unittest_class}}" ng-hide="Details"></uib-progressbar>
+    </div>
+    <div class="col-xs-2">
+          <div></div><uib-progressbar class="_element default"  value="c.collapsed_pgbar_functest" type="{{c.collapsed_pgbar_functest_class}}" ng-hide="Details"></uib-progressbar>
+    </div>
+  </h4>
+</div>
+<div id="{{c.buildname}}" class="panel-collapse collapse col-md-12">
+  <div class="panel-body">
+    <detail-boxes></detail-boxes>
+  </div>
+</div>
+</div>

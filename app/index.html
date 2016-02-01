@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css>
+    <link rel="stylesheet" href="styles/main.css" -->
+      <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/Additional.css" />
+  <link href="styles/smart-table-styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="bower_components/toastr/toastr.min.css" />
+   <!--  <link rel="stylesheet" href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css" /> -->
+   <link rel="stylesheet" href="bower_components/nvd3/nv.d3.css"/>    <!-- endbuild -->
+  </head>
+  <body ng-app="teamBuildDashboardApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+  <div>
+    <section id="dashboard-view" class="mainbar" data-ng-controller="MybuildlogCtrl as vm">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div st-table="rowCollection" class="table table-condensed table-layout-fixed responsive container-semifluid">
+              <div>
+                <div class="col-xs-3">Changelist/Build</div>
+                <div class="col-xs-1">Owner</div>
+                <div class="col-xs-2">Time Started</div>
+                <div class="col-xs-1">State</div>
+                <div class="col-xs-1">Metrics</div>
+                <div class="col-xs-1">Build</div>
+                <div class="col-xs-1">Unit Test</div>
+                <div class="col-xs-2">Functional Test</div>
+              </div>
+              <div class="panel-group row" id="accordion">
+                <div class="panel panel-default build-panel col-md-12" ng-class="c.class" ng-repeat="c in vm.logs">
+                  <row-directive></row-directive>
+              </div>
+              <div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-smart-table/dist/smart-table.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+<script src="bower_components/nvd3/nv.d3.js"></script>
+<script src="bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/mybuildlog.js"></script>
+        <script src="scripts/directives/rowdirective.js"></script>
+        <script src="scripts/services/common.js"></script>
+        <script src="scripts/services/logger.js"></script>
+        <script src="scripts/services/spinner.js"></script>
+        <script src="scripts/services/bootstrap.dialog.js"></script>
+        <script src="https://use.typekit.net/eai4mzr.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.0/ui-bootstrap-tpls.min.js"></script>
+        <script src="scripts/directives/detailboxes.js"></script>
+        <script src="scripts/directives/chartctrl.js"></script>
+
+        <!-- endbuild -->
+
+        <script>
+        try {
+          Typekit.load({
+            async: true
+          });
+        } catch (e) {}
+        </script>
+
+
+</body>
+</html>

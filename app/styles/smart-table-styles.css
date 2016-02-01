@@ -1,0 +1,17 @@
+th.sortable span:after {
+    font-family: FontAwesome;
+    content: "\f0dc";
+    float: right;
+}
+
+th.st-sort-ascent span:after {
+    font-family: FontAwesome;
+    content: "\f0de";
+
+}
+
+th.st-sort-descent span:after {
+    font-family: FontAwesome;
+    content: "\f0dd"
+}
+

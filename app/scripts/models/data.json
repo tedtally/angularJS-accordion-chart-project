@@ -1,0 +1,166 @@
+[{
+		"id": "1",
+		"buildname": "Tenrox-R1_1235",
+		"type": "Build",
+		"image": "PCImage",
+		"owner": " ",
+		"dateAdded": " ",
+		"status": "Pending",
+		"class": "lead2_Pending",
+		"change_status": "",
+		"metrics_status": "Metrics Pending",
+		"button_text": "Wait...",
+		"collapsed_pgbar_metrics": 0,
+		"collapsed_pgbar_metrics_class": "lead2_Pending",
+		"collapsed_pgbar_build": 0,
+		"collapsed_pgbar_build_class": "lead2_Pending",
+		"collapsed_pgbar_unittest": 0,
+		"collapsed_pgbar_unittetst_class": "lead2_Pending",
+		"collapsed_pgbar_functest": 0,
+		"collapsed_pgbar_functest_class": "lead2_Pending",
+		"pie": [{
+			"key": "passed",
+			"y": 142
+		}, {
+			"key": "failed",
+			"y": 10
+		}]
+	}, {
+		"id": "2",
+		"buildname": "432462",
+		"type": "Firewall",
+		"image": "Wall",
+		"owner": "jtuck",
+		"dateAdded": "1397837520000",
+		"status": "Running",
+		"class": "lead2_Running",
+		"change_status": "Running",
+		"metrics_status": "Metrics Running",
+		"button_text": "Cancel",
+		"collapsed_pgbar_metrics": 74,
+		"collapsed_pgbar_metrics_class": "lead2_Running",
+		"collapsed_pgbar_build": 0,
+		"collapsed_pgbar_build_class": "lead2_Pending",
+		"collapsed_pgbar_unittest": 0,
+		"collapsed_pgbar_unittest_class": "lead2_Pending",
+		"collapsed_pgbar_functest": 0,
+		"collapsed_pgbar_functest_class": "lead2_Pending",
+		"pie": [{
+			"key": "passed",
+			"y": 142
+		}, {
+			"key": "failed",
+			"y": 13
+		}]
+	}, {
+		"id": "3",
+		"buildname": "432461",
+		"type": "Firewall",
+		"image": "Wall",
+		"owner": "samy",
+		"dateAdded": "1397832780000",
+		"status": "Rejected",
+		"class": "lead2_Rejected",
+		"change_status": "Change Rejected",
+		"metrics_status": "Metrics Reduction",
+		"button_text": "Find Issues",
+		"collapsed_pgbar_metrics": 100,
+		"collapsed_pgbar_metrics_class": "danger",
+		"collapsed_pgbar_build": 100,
+		"collapsed_pgbar_build_class": "success",
+		"collapsed_pgbar_unittest": 100,
+		"collapsed_pgbar_unittest_class": "success",
+		"collapsed_pgbar_functest": 100,
+		"collapsed_pgbar_functest_class": "success",
+		"pie": [{
+			"key": "passed",
+			"y": 142
+		}, {
+			"key": "failed",
+			"y": 19
+		}]
+	}, {
+		"id": "4",
+		"buildname": "Tenrox-R1_1234",
+		"type": "Build",
+		"image": "PCImage",
+		"owner": " ",
+		"dateAdded": "1397742300000",
+		"status": "Completed",
+		"class": "lead2_Completed",
+		"change_status": "",
+		"metrics_status": "Complete",
+		"button_text": "Deploy",
+		"collapsed_pgbar_metrics": 100,
+		"collapsed_pgbar_metrics_class": "success",
+		"collapsed_pgbar_build": 100,
+		"collapsed_pgbar_build_class": "success",
+		"collapsed_pgbar_unittest": 100,
+		"collapsed_pgbar_unittest_class": "success",
+		"collapsed_pgbar_functest": 100,
+		"collapsed_pgbar_functest_class": "success",
+		"pie": [{
+			"key": "passed",
+			"y": 142
+		}, {
+			"key": "failed",
+			"y": 10
+		}]
+	}, {
+		"id": "5",
+		"buildname": "432460",
+		"type": "Firewall",
+		"image": "Wall",
+		"owner": "samy",
+		"dateAdded": "1397735460000",
+		"status": "Rejected",
+		"class": "lead2_Rejected",
+		"change_status": "Change Rejected",
+		"metrics_status": "Metrics Reduction",
+		"button_text": "Find Issues",
+
+		"collapsed_pgbar_metrics": 100,
+		"collapsed_pgbar_metrics_class": "danger",
+		"collapsed_pgbar_build": 0,
+		"collapsed_pgbar_build_class": "lead2_Pending",
+		"collapsed_pgbar_unittest": 0,
+		"collapsed_pgbar_unittest_class": "lead2_Pending",
+		"collapsed_pgbar_functest": 0,
+		"collapsed_pgbar_functest_class": "lead2_Pending",
+		"pie": [{
+			"key": "passed",
+			"y": 142
+		}, {
+			"key": "failed",
+			"y": 10
+		}]
+	}, {
+		"id": "6",
+		"buildname": "432459",
+		"type": "Firewall",
+		"image": "Wall",
+		"owner": "samy",
+		"dateAdded": "1397644980000",
+		"status": "Accepted",
+		"class": "lead2_Completed",
+		"change_status": "Change Accepted",
+		"metrics_status": "Auto-Merged",
+		"button_text": "Merged Build",
+		"collapsed_pgbar_metrics": 100,
+		"collapsed_pgbar_metrics_class": "success",
+		"collapsed_pgbar_build": 100,
+		"collapsed_pgbar_build_class": "success",
+		"collapsed_pgbar_unittest": 100,
+		"collapsed_pgbar_unittest_class": "success",
+		"collapsed_pgbar_functest": 100,
+		"collapsed_pgbar_functest_class": "success",
+		"pie": [{
+			"key": "passed",
+			"y": 142
+		}, {
+			"key": "failed",
+			"y": 10
+		}]
+	}
+
+]

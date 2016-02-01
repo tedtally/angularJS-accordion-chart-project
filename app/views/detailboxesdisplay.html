@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <div class="col-lg-12">
+      <div style="width:100%;">
+        <div>
+          <div style="float:left;">
+            <div class="elementBoxDetails {{c.class}} metrics clearfix col-xs-1 col-sm-2 col-md-3 col-lg-3">
+              <p class="text">Metrics</p>
+            </div>
+          </div>
+          <div>
+            <div class="elementBoxDetails {{c.class}} build clearfix col-xs-1 col-sm-2 col-md-3 col-lg-3">
+              <p class="text">Build</p>
+            </div>
+          </div>
+          <div>
+            <div class="elementBoxDetails {{c.class}} unittests clearfix col-xs-1 col-sm-2 col-md-3 col-lg-3">
+              <p class="text">Unit Test</p>
+
+              		<!-- <div> -->
+					<nvd3-pie-chart
+					      id="exampleId_{{c.id}}"
+					      data="c.pie"
+					      margin="{left:0,top:0,bottom:0,right:0}"
+					      x="vm.xFunction()"
+					      y="vm.yFunction()"
+					      width="{{ vm.width }}"
+					      height="{{ vm.height }}"
+					      showLabels="true"
+					      pieLabelsOutside="false"
+					      showValues="true"
+					      labelType="percent">
+					      <svg></svg>
+					    </nvd3-pie-chart>
+					    <!-- </div> -->
+            </div>
+          </div>
+          <div>
+            <div class="elementBoxDetails {{c.class}} functiontests clearfix col-xs-1 col-sm-2 col-md-3 col-lg-3">
+              <p class="text">Functional Test</p>
+            </div>
+          </div>
+          <div>
+        <div class="elementBoxDetails-end col-xs-1 col-sm-2 col-md-3 col-lg-3">
+          <p class="text text-10">Result:</p>
+          <p class="text text-12"><label class="{{c.class}}" style="font-size:16px;">{{c.change_status}}:</label></p>
+          <p ng-class="{bigbird: c.status === 'Accepted'}">{{c.metrics_status}}</label></p>
+          
+          <div class="container container-3 clearfix col-xs-1 col-sm-2 col-md-3 col-lg-3">
+          				<div ng-if="c.status == 'Accepted'">
+				            <button class="btn btn-primary" type="submit">
+								<span class="fa fa-search" style="padding-right:2px;"></span>
+									{{c.button_text}}    
+							</button>
+						</div>
+          				<div ng-if="c.status != 'Accepted'">
+				            <button class="btn btn-primary" type="submit">
+									{{c.button_text}}    
+							</button>
+						</div>
+
+            <div ng-if="c.class == 'lead2_Completed' && c.image == 'PCImage'">
+            	to: <br/> <select><option>Production</option>
+            					  <option>Staging</option>
+            					  <option>DR</option>
+            			 </select>
+            <div></div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
